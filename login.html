@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title id="title">O'WIFI CP1</title>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="expires" content="-1" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
+<link rel="stylesheet" href="css/mikhmon-ui-light.css">
+<link rel="stylesheet" href="css/background.css">
+<link rel="icon" href="img/favicon.png" />
+</head>
+
+<body class="background">
+	<div class="container">
+		<div class="row">
+			<div class="col-8 mr-a" id="main" style="float:none;">
+				<div class="row">
+					<div class="col-4">	
+						<div class="row">
+							<div class="col-12">
+								<div class="box bmh-80 bg-primary box-shadow text-center"><img src="img/24H24.png" alt="kemangi 41" style="border-radius: 5px; width:100%; height:auto;"/></div>
+
+							</div>
+							<div class='card bg-secondary'>
+								<!--
+								<marquee>
+						  <p><b>INFO:</b> A l'occasion de la <b>Fête des Mères</b>, une Journée de connexion internet O'WIFI est offerte à tous. <b>Ce DImanche 4 Juin </b> Entrez le code <strong>MAMAN</strong> pour en bénéficier. </p>
+						</marquee>
+								-->
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<div class="card  box-shadow">
+									<div class="card-header bg-primary"><h3>Connectez-vous</h3></div>
+									<div class="card-body">
+								$(if chap-id)
+									<form name="sendin" action="$(link-login-only)" method="post">
+										<input type="hidden" name="username" />
+										<input type="hidden" name="password" />
+										<input type="hidden" name="dst" value="$(link-orig)" />
+										<input type="hidden" name="popup" value="true" />
+									</form>
+	
+									<script type="text/javascript" src="/md5.js"></script>
+									<script type="text/javascript">
+									
+	    							function doLogin() {
+									document.sendin.username.value = document.login.username.value;
+									document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+									document.sendin.submit();
+									return false;
+	    							}
+									
+									</script>
+								$(endif)
+						
+					<div>	
+					<form autocomplete="off" name="login" action="$(link-login-only)" method="post"
+					    $(if chap-id) onSubmit="return doLogin()" $(endif)>
+						<input type="hidden" name="dst" value="$(link-orig)" />
+						<input type="hidden" name="popup" value="true" />
+							<div class="row">
+								<div class="col-4 col-md-4"> 
+								<div class="box mr-2 pointer text-center text-light" id="btnvcr" onclick="voucher()">CODE</div>
+								</div>
+								<div class="col-4 col-md-4">
+								<div class="box mr-2 pointer text-center text-light" id="btnmem" onclick="member()">COMPTE</div>
+								</div>
+								<div class="col-4 col-md-4">
+								<div class="box mr-2 pointer text-center text-light bg-blue" id="qr" onclick="window.location='https://laksa19.github.io/myqr';">QR Code</div>
+								</div>
+							</div>
+								<input class="form-control-md mr-t-10 plch-center" name="username" type="text" value="$(username)" placeholder="Voucher" />
+								<input class="form-control-md mr-t-10 plch-center" name="password" type="hidden" placeholder="Password" />
+
+							<div class="text-center mr-t-10">
+								<button type="submit" class="w-12 btn-md bg-success pd-5">Connexion</button>
+							</div>
+					</form>
+				</div>
+					
+				$(if error)<div class="alert bg-danger text-center mr-t-10">$(error)</div>$(endif)
+			</div>
+			<div class="card-footer bg-primary mr-t-10 text-center">
+				$(if trial == 'yes')Pour bénéficier de 5 Minutes gratuites <a class="text-pink text-bold" href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">cliquez ici</a>$(endif)
+			</div>
+		</div>
+	</div>
+	
+	<div class="col-12">
+		<div class="card box-shadow">
+			<div class="card-header bg-warning"><h3>POUR INSTALLATIONS A DOMICILE</h3></div>
+			<div class="card-body align-middle">Contactez le <b><a href="">07 874 495 27</a></b><br> </div>
+		</div>
+	</div>
+	
+</div>
+</div>
+
+	<div class="col-8">
+		<div class="row">
+			<div class="col-12">
+				<div class="card box-shadow">
+					<div class="card-header bg-success"><h3>BIENVENUE O'WIFI CP1</h3></div>
+					<div class="card-body">
+						<p>Restez connectés 24h/24 </p>
+							
+							<p>Pour l'achat de vos forfaits Rendez-vous:<br>
+						   	-A la <b>boutique chez SUAREZ</b> <br>
+						   	-A la <b>boutique chez BOUBA</b> <br>
+						   	- <b>Chez Princesse</b> à son Salon de coiffure <br>
+						  </p>
+						  
+						  <!--<marquee>
+						  <p>A l'occasion de la <b>Fête des Mères</b>, une Journée de connexion internet O'WIFI est offerte à tous. <b>Ce DImanche 4 Juin </b> Entrez le code <strong>MAMAN</strong> pour en bénéficier. </p>
+						</marquee>-->
+					</div>
+				</div>				
+			</div>
+			<div class="col-12">
+				<div class="card box-shadow">
+					<div class="card-header bg-cyan"><h3>Nos Forfaits et Tarifs</h3></div>
+					<div class="card-body">
+						<div class="row">
+							<div class="col-6">
+								<div class="box bg-pink bmh-60">
+									<div class="">
+            							<div class="box-group-icon">Heure</div>
+              							<div class="box-group-area">
+                						<span>
+                							100 FCFA<br>
+															Valable 2 Heures<br>
+                							1 Appareil connecté<br>
+                						</span>
+              							</div>
+            						</div>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="box bg-red bmh-60">
+									<div class="">
+            							<div class="box-group-icon">Jour</div>
+              							<div class="box-group-area">
+                						<span>
+                							300 FCFA<br>
+											 24H illimitées<br>
+											1 Appareil connecté<br>
+                						</span>
+              							</div>
+            						</div>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="box bg-blue bmh-60">
+									<div class="">
+            							<div class="box-group-icon">Semaine</div>
+              							<div class="box-group-area">
+                						<span>
+                							1000 FCFA<br>
+											7 jours illimités<br>
+                							1 Appareil connecté<br>
+                						</span>
+              							</div>
+            						</div>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="box bg-purple bmh-60">
+									<div class="">
+            							<div class="box-group-icon">Mois Solo</div>
+              							<div class="box-group-area">
+                						<span>
+                							3000 FCFA<br>
+                							1 Appareil connecté<br>
+											30 jours illimités<br>
+                						</span>
+              							</div>
+            						</div>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="box bg-green bmh-60">
+									<div class="">
+            							<div class="box-group-icon">Mois Duo</div>
+              							<div class="box-group-area">
+                						<span>
+                							5000FCFA<br>
+                							2 Appareils connectés<br>
+											Valable 30 jours<br>
+                						</span>
+              							</div>
+            						</div>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="box bg-dark bmh-60">
+									<div class="">
+            							<div class="box-group-icon">Mois Famille</div>
+              							<div class="box-group-area">
+                						<span>
+                							7000FCFA<br>
+															Valable 30j<br>
+                							4 appareils connectés<br>
+                						</span>
+              							</div>
+            						</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-footer bg-cyan pd-l-10">
+						<i>Copyright IDYLLE-TIC</i>
+	  					<i>Maintenu par <a class="text-light" href="">IDYLLE_TIC</a></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+<!--
+document.login.username.focus();
+document.getElementById('title').innerHTML = window.location.hostname + " > login";
+
+// login page 2 mode by Laksamadi Guko
+var username = document.login.username;
+var password = document.login.password;
+var luser = document.getElementById("luser");
+var lpass = document.getElementById("lpass");
+var btnmem = document.getElementById("btnmem");
+var btnvcr = document.getElementById("btnvcr");
+
+// set password = username
+function setpass(){
+  var user = username.value		
+  password.value = user;
+}
+	
+username.onkeyup = setpass;
+	
+btnmem.style.backgroundColor = "#73818f";
+btnvcr.style.backgroundColor = "#20a8d8";  
+
+// change to voucher mode
+function voucher(){
+  username.focus();
+  username.onkeyup = setpass;
+  username.placeholder = "Voucher";
+  password.type = "hidden";
+  password.value = username.value;  
+  btnmem.style.backgroundColor = "#73818f";
+  btnvcr.style.backgroundColor = "#20a8d8";  
+}
+
+// change to member mode
+function member(){
+  username.focus();
+  username.onkeyup = "";
+  username.placeholder = "Username";
+  password.type= "password";
+  password.value = "";
+  btnmem.style.backgroundColor = "#20a8d8"; 
+  btnvcr.style.backgroundColor = "#73818f"; 
+}
+
+//-->
+</script>
+</body>
+</html>
